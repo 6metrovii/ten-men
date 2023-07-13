@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230712174242">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230713161722">
     <title>Home</title>
 </head>
 
@@ -30,7 +30,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="header-cart icon-cart"></div>
+        <div class="header-cart icon-cart"><div class="header-cart-count"></div></div>
     </div>
 </header>
     <main>
@@ -72,6 +72,51 @@
         </div>
     </div>
 </footer> 
-    <script src="js/app.min.js?_v=20230712174242"></script>
+    <div class="modal-cart">
+    <div class="modal-cart-window"> 
+        <div class="modal-cart-window-header">
+            <div class="modal-cart-window-header-title"><span>ВАШЕ ЗАМОВЛЕННЯ</span> ( <div class="modal-cart-count">1</div> )</div>
+            <div class="modal-cart-window-close"></div>
+        </div>
+        <div class="modal-cart-window-body">
+            <div class="modal-cart-window-products">
+                <div class="modal-cart-window-product">
+                    <div class="product-image"><picture><source srcset="img/cart/cart1.webp" type="image/webp"><img src="img/cart/cart1.png" alt="image product"></picture></div>
+                    <div class="product-info">
+                        <h3 class="product-info-title">BERRY BLOOD: tomato and pepper (PICO DE GALLO edition)</h3>
+                        <div class="product-info-price">116 UAH</div>
+                    </div>
+                    <div class="product-info-setting">
+                        <div class="product-info-setting-count-block">
+                            <button class="product-info-setting-count-minus">-</button>
+                            <div class="product-info-setting-count-counter">1</div>
+                            <button class="product-info-setting-count-plus">+</button>
+                        </div>
+                        <button class="product-info-setting-close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-cart-window-info">
+                <div class="modal-cart-window-info-title">Всього</div>
+                <div class="modal-cart-window-info-price">116 UAH</div>
+            </div>
+            <a href="cart.html" class="modal-cart-window-link _btn">кошик</a>
+            <a href="catalog.html" class="modal-cart-window-button">Продовжити покупки</a>
+        </div>
+        </div>
+</div> 
+    <div class="modal-cart-zero">
+    <div class="modal-cart-window"> 
+        <div class="modal-cart-window-header">
+            <h2 class="modal-cart-window-header-title">ВАШЕ ЗАМОВЛЕННЯ(0)</h2>
+            <button class="modal-cart-window-close"></button>
+        </div>
+        <div class="modal-cart-window-body">
+            <div class="modal-cart-window-title">У кошику немає товарів</div>
+            <a href="catalog.html" class="modal-cart-window-button">Продовжити покупки</a>
+        </div>
+    </div>
+</div> 
+    <script src="js/app.min.js?_v=20230713161722"></script>
 </body>
 </html>
