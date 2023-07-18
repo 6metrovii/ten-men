@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230713162230">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230718163251">
     <title>Checkout</title>
 </head>
 
@@ -41,6 +41,8 @@
                     <div class="checkout-form-block">
                         <div class="checkout-form-block-text"><p>Доставка здійснюється по Україні “Новою поштою”.Замовлення після оплати відправляється на наступний день.</p></div>
                         <form action="#" class="checkout-form-block-form">
+                            <div class="checkout-form-block-form-text"><span>Дякуюємо за замовлення , чекайте на повідомлення на пошту з уточненням</span></div>
+                            <div class="checkout-form-block-form-spinner"><picture><source srcset="img/homepage-bear.webp" type="image/webp"><img src="img/homepage-bear.png" alt="image spinner"></picture></div>
                             <div class="checkout-form-block-form-column">
                                 <h2 class="checkout-form-block-title">Платіжні дані</h2>
                                 <div class="checkout-form-block-inputs">
@@ -54,11 +56,11 @@
                                     </div>
                                     <div class="checkout-form-block-input-wrapper">
                                         <h3 class="checkout-form-block-input-title">Телефон*</h3>
-                                        <input required type="text" class="checkout-form-block-input">
+                                        <input required type="tel" class="checkout-form-block-input">
                                     </div>
                                     <div class="checkout-form-block-input-wrapper">
                                         <h3 class="checkout-form-block-input-title">E-mail*</h3>
-                                        <input required type="text" class="checkout-form-block-input">
+                                        <input required type="email" class="checkout-form-block-input">
                                     </div>
                                 </div>
                             </div>
@@ -67,26 +69,40 @@
                                 <div class="checkout-form-block-inputs">
                                     <div class="checkout-form-block-input-wrapper">
                                         <h3 class="checkout-form-block-input-title">Область</h3>
-                                        <input type="text" class="checkout-form-block-input">
+                                        <div class="select-block card-select-block">
+                                            <div class="select-button"><span></span></div>
+                                            <select class="select" name="region" >
+                                                <option selected disabled="" ></option>
+                                                <option value="1">ЛЬвівська</option>
+                                                <option value="1">Київська</option>
+                                                <option value="3">Харківська</option>
+                                                <option value="4">Сумська</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="checkout-form-block-input-wrapper">
                                         <h3 class="checkout-form-block-input-title">Місто</h3>
-                                        <input type="text" class="checkout-form-block-input">
-                                    </div>
-                                    <div class="checkout-form-block-input-wrapper">
-                                        <h3 class="checkout-form-block-input-title">Відділення</h3>
-                                        <input type="text" class="checkout-form-block-input">
+                                        <div class="select-block card-select-block">
+                                            <div class="select-button"><span></span></div>
+                                            <select class="select" name="city" >
+                                                <option selected disabled="" ></option>
+                                                <option value="1">ЛЬвів</option>
+                                                <option value="1">Київ</option>
+                                                <option value="3">Харків</option>
+                                                <option value="4">Суми</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="checkout-form-block-form-column">
                                 <h2 class="checkout-form-block-title">ОПЛАТА</h2>
                                 <div class="checkout-form-block-checkbox-wrapper">
-                                    <input type="checkbox" class="checkout-form-block-checkbox">
+                                    <input required type="checkbox" class="checkout-form-block-checkbox">
                                     <div class="checkout-form-block-text">Оплата банківською карткою (Visa, Mastercard)</div>
                                 </div>
                                 <div class="checkout-form-block-checkbox-wrapper">
-                                    <input type="checkbox" class="checkout-form-block-checkbox">
+                                    <input required type="checkbox" class="checkout-form-block-checkbox">
                                     <div class="checkout-form-block-text">Я прочитав/ла і погоджуюся з правилами сайту <a title="правила та умови" href="privacy.html">правила та умови</a></div>
                                 </div>
                             </div>
@@ -96,16 +112,6 @@
                     <div class="checkout-products-block">
                         <h2 class="checkout-products-block-title">ВАШЕ ЗАМОВЛЕННЯ</h2>
                         <div class="checkout-products">
-                            <article class="checkout-product">
-                                <div class="checkout-product-image"><picture><source srcset="img/checkout/checkout1.webp" type="image/webp"><img src="img/checkout/checkout1.png" alt="image product"></picture></div>
-                                <div class="item-body">
-                                    <h3 class="item-title">BERRY BLOOD: tomato and pepper (PICO DE GALLO edition)</h3>
-                                    <div class="item-info">
-                                        <div class="item-count">1 шт</div>
-                                        <div class="item-price">116 UAH</div>
-                                    </div>
-                                </div>
-                            </article>
                         </div>
                         <div class="checkout-products-prices">
                             <h3 class="checkout-products-prices-ttitle">сума замовлення:</h3>
@@ -150,21 +156,6 @@
         </div>
         <div class="modal-cart-window-body">
             <div class="modal-cart-window-products">
-                <div class="modal-cart-window-product">
-                    <div class="product-image"><picture><source srcset="img/cart/cart1.webp" type="image/webp"><img src="img/cart/cart1.png" alt="image product"></picture></div>
-                    <div class="product-info">
-                        <h3 class="product-info-title">BERRY BLOOD: tomato and pepper (PICO DE GALLO edition)</h3>
-                        <div class="product-info-price">116 UAH</div>
-                    </div>
-                    <div class="product-info-setting">
-                        <div class="product-info-setting-count-block">
-                            <button class="product-info-setting-count-minus">-</button>
-                            <div class="product-info-setting-count-counter">1</div>
-                            <button class="product-info-setting-count-plus">+</button>
-                        </div>
-                        <button class="product-info-setting-close"></button>
-                    </div>
-                </div>
             </div>
             <div class="modal-cart-window-info">
                 <div class="modal-cart-window-info-title">Всього</div>
@@ -187,6 +178,7 @@
         </div>
     </div>
 </div> 
-    <script src="js/app.min.js?_v=20230713162230"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20230718163251"></script>
+    <script src="js/app.min.js?_v=20230718163251"></script>
 </body>
 </html>
